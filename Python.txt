@@ -1,0 +1,32 @@
+https://vallarasu.in/py-selenium#setup
+
+Vallarasu Sambathkumar
+
+py filename.py
+python filename.py
+python3 filename.py
+
+
+
+https://github.com/VallarasuS/Py-Selenium-Payil/tree/zen
+
+
+https://github.com/VallarasuS/Py-Selenium-Payil/tree/zen
+
+Dec-19
+
+
+# name, age, height, weight
+# qualification, employer, license holder?
+
+https://github.com/VallarasuS/Py-Selenium-Payil/blob/zen/datatypes.py
+
+
+
+example : 
+
++, -, *, /, //, %
+
+
+
+
