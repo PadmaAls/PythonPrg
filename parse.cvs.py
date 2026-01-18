@@ -8,7 +8,7 @@ def csv_incr_year_and_age(input_data):
     Age = str(Age)
     Year = str(Year)
     incr_data = Name+","+ Age+","+Year
-    print(incr_data)
+    #print(incr_data)
     return incr_data
 
 
