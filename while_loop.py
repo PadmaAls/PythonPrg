@@ -24,15 +24,16 @@ print("------------------------------------------------------------")
 #print table format 1x2 = 2 ... 10x2 = 20
 print ("Table format 1x2 = 2 ... 10x2 = 20")
 
-def table_view(xval, tableval):
+def table_view(tableval):
+    xval = 1
     while xval <= 10:
          #xval2 = xval * 2
          table_format = f"{xval} x {tableval} =  {xval * tableval}"
          print(table_format)
          xval = xval + 1
-xval = 1
+
 tableval = 2
-table_view(xval, tableval)
+table_view(tableval)
 
 print("------------------------------------------------------------")
 
