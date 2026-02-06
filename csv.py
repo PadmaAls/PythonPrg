@@ -41,7 +41,7 @@ def parse_csv(data):
         
         avg = sum // 3
         wrd3 = word_split[3].strip(" ")
-        all_details = f"{word_split[0].strip(" ")},{word_split[1].strip(" ")},{word_split[2].strip(" ")}, {word_split[3].strip(" ")}, {word_split[4].strip(" ")},{sum},{avg},{top}"
+        all_details = f"{word_split[0].strip()},{word_split[1].strip()},{word_split[2].strip()}, {word_split[3].strip()}, {word_split[4].strip()},{sum},{avg},{top}"
         print(all_details)
                  
 parse_csv(data)
