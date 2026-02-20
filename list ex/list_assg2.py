@@ -63,7 +63,26 @@ def sortnum(listnm):
     return listnm
     
 sortlist = sortnum(list4)
-print("Sort List :",sortlist)
+print("Sort List Asc:",sortlist)
+
+def sortnumdesc(listnm):
+    length = len(listnm)
+    for i in range(0, length-1,1):
+        for j in range(0,length-1,1):
+            num1 = listnm[j]
+            num2 = listnm[j+1]
+            if num1 < num2:
+               listnm[j],listnm[j+1] = num2,num1
+    return listnm
+    
+sortlist = sortnumdesc(list4)
+print("Sort List Desc:",sortlist)
+
+list4.sort()
+print("Sorted list using sort function :", list4)
+
+list4.sort(reverse= True)
+print("Sorted using function Desc :",list4)
 
 # 9. Sum of given numbers
 list3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
