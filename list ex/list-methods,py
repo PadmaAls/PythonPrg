@@ -1,0 +1,112 @@
+# # ADD
+# # - append - add to end of list (Last In)
+# # - insert - add at specific index
+# # - extend - merge / extend two list
+
+list1 = [1,2,3,"Padma","Sri"]
+text1 = "Hello"
+list1.append(text1)
+print(list1)
+
+text2 = "newadd"
+list1.insert(2,text2)
+print(list1)
+
+
+list2 = [9,8,7,6]
+list1.extend(list2)
+print(list1)
+
+
+# # Delete
+# # - pop - removes the last element (First Out)
+# # - remove - removes a specific element
+# # - clear - clear entire list
+
+list1.pop()
+print(list1)
+
+list1.remove(1)
+print(list1)
+
+list1.clear()
+print(list1)
+
+# # Re-ordering
+# # sort - asc, desc order
+# # reverse - reverses the order in which elements were added
+
+list1 = [1,2,3,5,8,4,7]
+#list2 = list1.sort() # This line is returning None values
+#print(list2)
+#list3 = list1.sort(reverse = True) # This line is returning None values
+#print(list3)
+
+list1.sort()
+print(list1)
+
+list1.sort(reverse=True)
+print(list1)
+
+# # add - append, insert, extend
+# # delete - pop, remove, clear
+# sort, reverse
+# numbers = [5, 1, 3, 4]
+
+
+# Rotate the list N times - N = 2
+# [1, 2, 3, 4, 5] -> [5, 1, 2, 3, 4] -> [4, 5, 1, 2, 3]
+# total, squaring a list, find evens
+# reversing a list
+# sort a list -> asc, desc ->
+
+
+# Rotate the list N times - N = 2
+# [1, 2, 3, 4, 5] -> [5, 1, 2, 3, 4] -> [4, 5, 1, 2, 3]
+
+list3 = [1, 2, 3, 4, 5]
+
+
+def rotate(listval):
+        lastval = listval.pop()
+        listval.insert(0,lastval)
+        return listval
+
+firstlist = rotate(list3)
+print(firstlist)
+seclist = rotate(firstlist)
+print(seclist)
+
+
+# total, squaring a list, find evens
+
+def total(listnm):
+    tot = 0
+    for i in range(0,len(listnm),1):
+        tot = tot + listnm[i]         
+    return tot
+
+tot = total(list3)
+print(tot)
+
+
+#squaring a list
+def squ(listnm):
+    for i in range(0,len(listnm),1):
+      listnm[i] = listnm[i] * listnm[i]
+    return listnm
+
+squlist = squ(list3)
+print(squlist)
+
+#find evens
+
+def findeven(listnm):
+    listeven = []
+    for i in range(0,len(listnm),1):
+      if(listnm[i] % 2 == 0):
+         listeven.append(listnm[i])
+    return listeven
+
+evenlist = findeven(list3)
+print(evenlist)        
