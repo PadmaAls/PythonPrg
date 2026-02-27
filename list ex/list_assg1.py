@@ -20,18 +20,21 @@ print("Total count :",totcount)
 # 3. Given scores, grade each score: A > 90, B > 80, C > 60, others D
 
 def gradecalc(markslist):
- gradelist = []
- print(len(markslist))
- for i in range(0, len(markslist),1):
-    if markslist[i] <= 60:
-        gradelist.append("D")
-    elif markslist[i] >= 90:
-        gradelist.append("A")
-    elif markslist[i] >= 80:
-           gradelist.append("B")
-    elif markslist[i] > 60:
-              gradelist.append("C")
- return gradelist
+    
+    gradelist = []
+    print(len(markslist))
+
+    for i in range(0, len(markslist),1):
+        if markslist[i] <= 60:
+            gradelist.append("D")
+        elif markslist[i] >= 90:
+            gradelist.append("A")
+        elif markslist[i] >= 80:
+            gradelist.append("B")
+        elif markslist[i] > 60:
+            gradelist.append("C")
+            
+    return gradelist
 
 glist = []
 glist = gradecalc(markslist)
