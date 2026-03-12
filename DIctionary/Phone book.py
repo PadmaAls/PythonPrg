@@ -1,17 +1,5 @@
 
-# contacts_dict = {}
-# def phone_book(name, phonenum, email):
-#     contacts_dict.update({"name" : name})
-#     contacts_dict.update({"phone" : phonenum})
-#     contacts_dict.update({"Email" : email})
-#     return(contacts_dict)
 
-
-# phone_book("Test1",'123-456-7890',"test1@gmail.com")
-# phone_book("Test2",'223-456-7890',"test2@gmail.com")
-# phone_book("Test3",'323-456-7890',"test3@gmail.com")
-# phone_book("Test4",'423-456-7890',"test4@gmail.com")
-# phone_book("Test5",'523-456-7890',"test5@gmail.com")
 
 phone_book = [
     ("Test1","123-456-7890","test1@gmail.com"),
@@ -33,7 +21,9 @@ print(phone_book_dict)
 print("*******************************")
 print("Find a user in the dictionary")
 search_user = phone_book_dict.get("Test2")
+search_user1 = phone_book_dict.get(name)
 print(search_user)
+print(search_user1)
 
 
 print("*******************************")

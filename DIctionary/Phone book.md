@@ -16,3 +16,9 @@ list comprehension, str.lower(), any()/filter()
 Delete contact
 Can delete by exact name or by number shown in list
 remove from list/dict, index handling
+
+Formatting
+name = "John"
+phone = "789 356 125"
+email = "john@gmail.com"
+print(f"{name:<10} | {phone:>14} | {email:<50}")
