@@ -55,3 +55,4 @@ def remove_item_dict(remove_item, dictname):
 remove_item = "Test3"
 removeitem = remove_item_dict(remove_item,phone_book_dict)
 print(removeitem)
+print(phone_book_dict)
