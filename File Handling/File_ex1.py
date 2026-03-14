@@ -19,18 +19,23 @@ print(content)
 file.close()
 print("****************************************************************")
 
-file = open(r"C:\Users\alash\Desktop\Python\fileread.txt","r")
+with open(r"C:\Users\alash\Desktop\Python\fileread.txt","r") as file:
 
-contline = file.readline()
-while(len(contline) > 0):
- contline = file.readline()
- print(contline)
+#  contline = file.readline()
+#  while(len(contline) > 0):
+#   contline = file.readline()
+#   print(contline)
 
-print("Type of Contline :",type(contline))
+ 
+ readbool =  True
+ while readbool:
+    contline = file.readline()
+    readbool = len(contline) > 0
+    print("Length : ", len(contline))
+    print(contline)
 
-contline = file.readline()
-print(contline)
-file.close()
+ print("Type of Contline :",type(contline))
+
 print("****************************************************************")
 
 
@@ -50,5 +55,3 @@ except FileNotFoundError:
 finally:
       file.close()
 
-print("Lines :",contlines)
-print("Line : ", contline)
